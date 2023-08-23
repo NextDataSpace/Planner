@@ -1,0 +1,26 @@
+{
+  "name": "planner-sale",
+  "version": "1.0.0",
+  "description": "Custom Planner Creation Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "lint": "eslint .",
+    "test": "echo \"No tests yet\""
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.0.10",
+    "postcss": "^8.4.28",
+    "postcss-preset-env": "^9.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  }
+}
