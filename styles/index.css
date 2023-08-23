@@ -1,0 +1,33 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a default font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style for the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Style for the main content */
+main {
+  padding: 2rem;
+}
+
+/* Style for the footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Add more styles as needed */
