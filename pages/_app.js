@@ -1,24 +1,23 @@
-// pages/_app.js
-import React from 'react';
-import '../styles/global.css'; // Import your global styles
-import AppContextProvider from '../context/AppContextProvider'; // Import your context provider if applicable
+import "../styles/index.css";
+import { Fragment } from "react";
+import { DefaultSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AppContextProvider>
-      {/* You can add additional layout components here */}
-      <div>
-        <header>
-          {/* Your site header */}
-        </header>
-        <main>
-          <Component {...pageProps} />
-        </main>
-        <footer>
-          {/* Your site footer */}
-        </footer>
-      </div>
-    </AppContextProvider>
+    <Fragment>
+      <DefaultSeo
+        title="Youtube Thumbnail Downloader"
+        description="Download high-quality thumbnails from YouTube videos."
+        canonical="https://your-website-url.com"
+        openGraph={{
+          url: "https://your-website-url.com",
+          title: "Youtube Thumbnail Downloader",
+          description: "Download high-quality thumbnails from YouTube videos.",
+          site_name: "Youtube Thumbnail Downloader",
+        }}
+      />
+      <Component {...pageProps} />
+    </Fragment>
   );
 }
 
